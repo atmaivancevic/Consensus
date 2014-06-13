@@ -7,7 +7,7 @@
 
 # Go to directory containing the alignments for each cluster, for this species
 # (both original and Gblocks-improved alignments)
-cd /Users/atma/GenomeAnalysis/Fulllength_L1s/Clusters/$1
+cd /scratch/atmaGenomes/GenomeAnalysis/Fulllength_L1s/Clusters/$1
 
 # Make a consensus sequence from each Gblocks-improved alignment file
 for i in *_gb.afa;
