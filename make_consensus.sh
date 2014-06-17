@@ -10,11 +10,11 @@
 cd /scratch/atmaGenomes/GenomeAnalysis/Fulllength_L1s/Clusters/$1
 
 # Make a consensus sequence from each Gblocks-improved alignment file
-for i in *_gb.afa;
+for i in *_gbHalf.afa; #currently set to make consensus out of gbHalf alignments
 do
 	piler -cons $i -out "${i/.afa}"_cons.fasta -label "${i/.afa}"_cons
 done	
 
 # Concatenate all the consensus seqs for this species into one file
-cat *_cons.fasta > $1_all_cluster_cons.fasta 
+cat *_gbHalf_cons.fasta > $1_all_cluster_gbHalf_cons.fasta 
 
