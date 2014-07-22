@@ -7,7 +7,7 @@
 
 # Go to directory containing the alignments for each cluster, for this species
 # (both original and Gblocks-improved alignments)
-cd /scratch/atmaGenomes/GenomeAnalysis/All_BovB_Cutoff_Hits/Clusters/$1/
+cd /scratch/atmaGenomes/GenomeAnalysis/All_L1_Cutoff_Hits/Clusters/$1/
 
 # Make a consensus sequence from each Gblocks-improved alignment file
 for i in *_gbHalf.afa; #currently set to make consensus out of gbHalf alignments
